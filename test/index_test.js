@@ -2,8 +2,10 @@ let moduleRoot = '../es6';
 if (process.env.TEST_RELEASE) {
   moduleRoot = '../dist';
 }
-
+import concat from 'concat-stream';
 const imapStream = require(moduleRoot);
+
+/*eslint-disable */
 const expected = `Date: Sat, 28 Dec 2013 07:12:01 -0800 (PST)
 Subject: Aggiungi una foto del profilo
 From: "Google+" <noreply-bbf11161@plus.google.com>
@@ -25,7 +27,8 @@ Subject: this is a test
 
 
 `;
-import concat from 'concat-stream';
+/*eslint-enable */
+
 
 describe('imapStream', function imapStreamTest() {
   this.timeout(60000);

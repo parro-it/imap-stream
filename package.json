@@ -4,6 +4,7 @@
   "repository": "https://github.com/parro-it/imap-stream.git",
   "version": "1.0.0",
   "main": "dist/index.js",
+  "license": "MIT",
   "dependencies": {
     "babel-runtime": "^5.8.20",
     "concat-stream": "^1.5.0",

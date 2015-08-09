@@ -9,7 +9,7 @@ function buildBoxesTree(boxes, parent = '') {
 
   Object.keys(boxes).forEach( boxName => {
     const origBox = boxes[boxName];
-    if (origBox.attribs.includes('\\Noselect')) {
+    if (origBox.attribs.indexOf('\\Noselect') !== -1) {
       return;
     }
     const box = {
