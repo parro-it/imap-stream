@@ -56,7 +56,7 @@ const streamBox = (stream, emitError, imap) => streamDone => {
         },
         body => {
           stream.write(body);
-          stream.write('\n\n');
+          stream.write('---\n\n');
           remaining--;
         }
       ));
