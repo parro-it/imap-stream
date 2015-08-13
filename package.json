@@ -4,11 +4,13 @@
   "repository": "https://github.com/parro-it/imap-stream.git",
   "version": "1.0.0",
   "main": "dist/index.js",
+  "bin": {"imap-stream":"dist/bin.js"},
   "license": "MIT",
   "dependencies": {
     "babel-runtime": "^5.8.20",
     "concat-stream": "^1.5.0",
-    "imap": "^0.8.15"
+    "imap": "^0.8.15",
+    "yargs": "^3.18.0"
   },
   "author": "parro-it",
   "scripts": {
@@ -37,7 +39,6 @@
     "chai": "^2.2.0",
     "co": "^4.5.2",
     "co-mocha": "^1.1.0",
-
     "eslint": "^0.24.1",
     "eslint-config-airbnb": "0.0.6",
     "eslint-plugin-babel": "^1.2.0",

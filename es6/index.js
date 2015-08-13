@@ -2,7 +2,7 @@ import { PassThrough } from 'stream';
 import Imap from 'imap';
 import thenify from 'thenify';
 import concat from 'concat-stream';
-
+export { imapCmdLineOptions } from './bin';
 
 function buildBoxesTree(boxes, parent = '') {
   const results = [];
@@ -56,7 +56,7 @@ const streamBox = (stream, emitError, imap) => streamDone => {
         },
         body => {
           stream.write(body);
-          stream.write('---\n\n');
+          stream.write('---\n');
           remaining--;
         }
       ));
