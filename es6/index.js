@@ -34,7 +34,7 @@ function buildBoxesTree(boxes, parent = '') {
 
 const streamBox = (stream, emitError, imap) => streamDone => {
   const f = imap.fetch('1:*', {
-      bodies: 'HEADER.FIELDS (FROM TO SUBJECT DATE)',
+      bodies: 'HEADER.FIELDS (FROM TO CC BCC SUBJECT DATE)',
       struct: true
   });
 
