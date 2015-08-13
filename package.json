@@ -2,9 +2,11 @@
   "name": "imap-stream",
   "description": "",
   "repository": "https://github.com/parro-it/imap-stream.git",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "main": "dist/index.js",
-  "bin": {"imap-stream":"dist/bin.js"},
+  "bin": {
+    "imap-stream": "dist/bin.js"
+  },
   "license": "MIT",
   "dependencies": {
     "babel-runtime": "^5.8.20",
