@@ -3,7 +3,7 @@ if (process.env.TEST_RELEASE) {
   moduleRoot = '../dist';
 }
 import concat from 'concat-stream';
-const imapStream = require(moduleRoot);
+const imapStream = require(moduleRoot).default;
 
 /*eslint-disable */
 const expected = `Date: Sat, 28 Dec 2013 07:12:01 -0800 (PST)
